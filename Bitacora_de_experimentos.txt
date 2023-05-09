@@ -1,44 +1,143 @@
-## Experimento 1
-- Fecha y hora: 2/05/2023 13:00
-- Algoritmo: Regresión logística
-- Dataset: cumulative.csv
-### Resultado:
-- R1 Train: 70.18%
-- R1 Test: 71.14%
-- R1 Cross Val: 69.59%
+Bitácoras
 
-## Experimento 2
-- Fecha y hora: 2/05/2023 13:05
-- Algoritmo: Regresión logística de segundo grado
-- Dataset: cumulative.csv
-### Resultado:
-- R2 Train: 79.12%
-- R2 Test: 80.30%
-- Cross Val: 77.05%
+Experimentos de clasificación
 
-## Experimento 3
-- Fecha y hora: 2/05/2023 13:15
-- Algoritmo: Regresión logística de tercer grado
-- Dataset: cumulative.csv
-### Resultado:
-- R3 Train: 82.74%
-- R3 Test: 83.12%
-- Cross Val: 79.12%
+Regresiones logísticas (clasificación binaria)
 
-## Experimento 4
-- Fecha y hora: 2/05/2023 13:30
-- Algoritmo: Regresión logística de cuarto grado
-- Dataset: cumulative.csv
-### Resultado:
-- R4 Train: 86.51%
-- R4 Test: 84.41%
-- Cross Val: 81.19%
+Experimento 1
+Fecha y hora: 2/05/2023 13:00
+Algoritmo: Regresión logística
+Dataset: cumulative.csv
+Configuración: sklearn.linear_model.LogisticRegression 
+Resultado:
+R1 Train: 68.2% 
+R1 Test: 67.21%
+R1 Cross Val: 68.38%
 
-## Experimento 5
-- Fecha y hora: 2/05/2023 15:00
-- Algoritmo: Regresión logística de quinto grado
-- Dataset: cumulative.csv
-### Resultado:
-- R3 Train: 88.15%
-- R3 Test: 84.99%
-- Cross Val: 81.75%
+Experimento 2
+Fecha y hora: 2/05/2023 13:05
+Algoritmo: Regresión logística de segundo grado
+Dataset: cumulative.csv
+Configuración: sklearn.linear_model.LogisticRegression
+sklearn.preprocessing.PolynomialFeatures
+sklearn.preprocessing.StandardScaler
+Resultado:
+R2 Train: 79.53%
+R2 Test: 77.42%
+Cross Val: 77.77%
+
+Experimento 3
+Fecha y hora: 2/05/2023 13:15
+Algoritmo: Regresión logística de tercer grado
+Dataset: cumulative.csv
+Configuración: sklearn.linear_model.LogisticRegression
+sklearn.preprocessing.PolynomialFeatures
+sklearn.preprocessing.StandardScaler
+Resultado:
+R3 Train: 84.50%
+R3 Test: 79.91%
+Cross Val: 80.64%
+
+Experimento 4
+Fecha y hora: 2/05/2023 13:30
+Algoritmo: Regresión logística de cuarto grado
+Dataset: cumulative.csv
+Configuración: sklearn.linear_model.LogisticRegression
+sklearn.preprocessing.PolynomialFeatures
+sklearn.preprocessing.StandardScaler
+Resultado:
+R4 Train: 87.67%
+R4 Test: 81.89%
+Cross Val: 81.37%
+
+Experimento 5
+Fecha y hora: 2/05/2023 15:00
+Algoritmo: Regresión logística de quinto grado
+Dataset: cumulative.csv
+Configuración: sklearn.linear_model.LogisticRegression
+sklearn.preprocessing.PolynomialFeatures
+sklearn.preprocessing.StandardScaler
+Resultado:
+R3 Train: 88.15%
+R3 Test: 82.93%
+Cross Val: 80.78%
+
+Clasificación General, métodos diversos
+
+Experimento 6
+Fecha y hora: 3/05/2023  11:00
+Algoritmo: Árbol de decisión
+Dataset: cumulative.csv
+Configuración:
+Algoritmo sklearn.tree.DecisionTreeClassifier
+Resultado:
+Accuracy 78.8%
+Sensibilidad 75.9%
+Especificidad 81.2%
+
+Experimento 7
+Fecha y hora: 3/05/2023  12:00
+Algoritmo: Random Forest
+Dataset: cumulative.csv
+Configuración:
+Algoritmo sklearn.ensemble.RandomForestClassifier
+Resultado:
+Accuracy 84.8%
+Sensibilidad 77.8%
+Especificidad 90.4%
+
+Experimento 8
+Fecha y hora: 8/05/2023  22:00
+Algoritmo: SVC
+Dataset: cumulative.csv
+Configuración:
+Algoritmo sklearn.svm.SVC
+Resultado:
+Accuracy 69.3%
+Sensibilidad 37.1%
+Especificidad 95.4%
+
+Experimento 9
+Fecha y hora: 8/05/2023  22:15
+Algoritmo: Naïve Bayes
+Dataset: cumulative.csv
+Configuración:
+Algoritmo sklearn.naive_bayes.GaussianNB
+Resultado:
+Accuracy 74.6%
+Sensibilidad 49.8%
+Especificidad 94.6%
+
+Experimento 10
+Fecha y hora: 8/05/2023  22:55
+Algoritmo: Red neuronal artificial
+Dataset: cumulative.csv
+Configuración:
+Activación: ´logistic´ 
+Iteraciones:1700
+Arquitectura [4,2]
+Resultado:
+Accuracy 81.3%
+Sensibilidad 72.3%
+Especificidad 90.2%
+
+Experimentos de Regresión Lineal Múltiple 
+
+Experimento 1
+Fecha y hora: 3/05/2023  10:00
+Algoritmo:Regresión Lineal Múltiple 
+Dataset: cumulative.csv
+Configuración:
+Algoritmo sklearn.linear_model.LinearRegression
+Resultado:
+R^2= 0.9985
+
+Experimento 2
+Fecha y hora: 5/05/2023  10:00
+Algoritmo: Red neuronal artificial
+Dataset: cumulative.csv
+Configuración:
+Una Neurona, entrada=2 datos
+Learning Rate: 0.01
+Resultado:
+R^2= 0.8118
